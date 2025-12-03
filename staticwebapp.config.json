@@ -3,6 +3,13 @@
     {
       "route": "/*",
       "rewrite": "/index.html"
+    },
+    {
+      "route": "/admin/*",
+      "rewrite": "/index.html",
+      "allowedRoles": [
+        "authenticated"
+      ]
     }
   ]
 }
