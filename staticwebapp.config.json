@@ -6,10 +6,7 @@
     },
     {
       "route": "/admin/*",
-      "rewrite": "/index.html",
-      "allowedRoles": [
-        "authenticated"
-      ]
+      "rewrite": "/index.html"
     }
   ]
 }
