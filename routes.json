@@ -2,7 +2,14 @@
   "routes": [
     {
       "route": "/*",
-      "serve": "/index.html"
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/admin/*",
+      "rewrite": "/index.html",
+      "allowedRoles": [
+        "authenticated"
+      ]
     }
   ]
 }
